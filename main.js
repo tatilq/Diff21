@@ -1,5 +1,3 @@
-
-
 var numero1 = document.getElementById("numero_1");
 var diferencia = 0;
 
