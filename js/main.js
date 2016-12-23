@@ -20,21 +20,27 @@ function calcular()
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger"><p>Numero mayor, la diferencia sera el doble</p></div>';
 	
 	}
-	else 
+	else if (val_num1 < 21 )
 	{
 		diferencia =21- parseFloat(numero1.value);
 		var valorDiferencia= parseFloat(diferencia);
 		salida.innerHTML = valorDiferencia.toFixed(2);
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger"><p>Numero menor a 21</p></div>';
 	}
+	else{
+		salida.innerHTML = "--";
+		document.getElementById("mensajes").innerHTML = '<div class="alert_num alert-danger"><p>No es un Numero</p></div>';
+	
+	}
 
-}
+}/*
   function validarSiNumero(numero)
   {
 
     if (!/^([0-9])*$/.test(numero))
     {
     	alert('Debes ingresar un numero')
-  		/*document.getElementById("mensajes").innerHTML ='<div class="alert_num "><p>No es un numero</p></div>';*/
+  		document.getElementById("mensajes").innerHTML ='<div class="alert_num "><p>No es un numero</p></div>';
 	}
-  }
+	
+  }*/
